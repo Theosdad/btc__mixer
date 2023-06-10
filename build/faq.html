@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mixer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/Lato-Bold.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/Lato-Regular.woff2" type="font/woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <nav class="header__nav nav">
+                    <a class="nav__logo logo" href="index.html">
+                        <img src="./img/svg/logo.svg" width="55" height="55" alt="mixer logo">
+                    </a>
+                    <ul class="nav__list site-list">
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="index.html">Home</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="about.html">About</a>
+                        </li>
+                        <li class="site-list__item">
+                            <select id="lang" class="site-list__select select">
+                                <option value="english" selected>EN</option>
+                                <option value="french">FR</option>
+                                <option value="russian">RU</option>
+                                <option value="italian">IT</option>
+                                <option value="spanish">ES</option>
+                                <option value="chinese">CN</option>
+                                <option value="german">DE</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="faq">
+                <div class="faq__container container">
+                    <h2>Frequently Asked Questions</h2>
+                    <ul class="faq__list accordion">
+                        <li class="faq__item accordion__item">
+                            <h3>How to use the Mixer service?</h3>
+                            <button class="faq__button accordion__button" type="button"></button>
+                            <p>Enter Destination BTC Addresses: Provide one or&nbsp;more destination BTC addresses for
+                                the
+                                transaction.
+                                These addresses represent where you want your BTC to&nbsp;be&nbsp;sent after the mixing
+                                process.
+                                <br>
+                                Choose Fees: Select the fees that you would like Mixer to&nbsp;deduct for the service.
+                                The available fee
+                                options and their functions are explained in&nbsp;detail on&nbsp;our <a
+                                href="about.html"><b>&laquo;About&raquo;</b></a>
+                                page. Make sure
+                                to&nbsp;review this information for a&nbsp;better understanding.
+                            </p>
+                        </li>
+
+                        <li class="faq__item accordion__item">
+                            <h3>How does Mixer work?</h3>
+                            <button class="faq__button accordion__button" type="button"></button>
+                            <p>Mixer is&nbsp;a&nbsp;trusted BTC transaction service dedicated to&nbsp;enhancing the
+                                security and
+                                privacy of&nbsp;your transactions. Our primary goal is&nbsp;to&nbsp;make your
+                                transactions highly
+                                intricate to&nbsp;track, ultimately strengthening your online identity and security.</p>
+                        </li>
+
+                        <li class="faq__item accordion__item">
+                            <h3>What is&nbsp;Mixer&rsquo;s guarantee?</h3>
+                            <button class="faq__button accordion__button" type="button"></button>
+                            <p>On&nbsp;the transaction page, you have the option to&nbsp;download your Letter
+                                of&nbsp;Guarantee. This
+                                document serves as&nbsp;your unique proof of&nbsp;transaction, as&nbsp;it&nbsp;contains
+                                a&nbsp;signed
+                                record of&nbsp;your transaction details. Should you encounter any issues or&nbsp;have
+                                inquiries
+                                regarding
+                                the status of&nbsp;your transactions, feel free to&nbsp;reach out to&nbsp;our support
+                                team
+                                at&nbsp;<a href="mailto:example@example.com"><b>example@example.com</b></a>
+                            </p>
+                        </li>
+
+                        <li class="faq__item accordion__item">
+                            <h3>How does the Mixer protocol work?</h3>
+                            <button class="faq__button accordion__button" type="button"></button>
+                            <p>Mixer employs advanced and sophisticated protocols to&nbsp;provide highly secure
+                                transactions. Our primary objective is&nbsp;to&nbsp;ensure the confidentiality and
+                                anonymity of&nbsp;your online transactions. To&nbsp;achieve this, we&nbsp;leverage the
+                                power of&nbsp;the widely recognized CoinJoin protocol. However, it&rsquo;s important
+                                to&nbsp;note that we&nbsp;have developed our own unique strategies and algorithms,
+                                tailored specifically to&nbsp;meet the high standards of&nbsp;privacy and security that
+                                our users expect. By&nbsp;utilizing these proprietary protocols, we&nbsp;offer
+                                a&nbsp;level of&nbsp;protection and anonymity that goes beyond traditional CoinJoin
+                                implementations. Your virtual identity remains safeguarded, and your transactions remain
+                                hidden from prying eyes on&nbsp;the internet.
+                            </p>
+                        </li>
+
+                        <li class="faq__item accordion__item">
+                            <h3>Why should&nbsp;I protect and anonymize my&nbsp;transactions?</h3>
+                            <button class="faq__button accordion__button" type="button"></button>
+                            <p>Ensuring your online safety and protecting your financial assets is&nbsp;of&nbsp;utmost
+                                importance. By&nbsp;prioritizing the security and confidentiality of&nbsp;your
+                                transactions, you shield yourself from potential threats posed by&nbsp;malicious hackers
+                                and other cybercriminals. Maintaining the anonymity of&nbsp;your transactions
+                                is&nbsp;equally crucial, as&nbsp;it&nbsp;allows you to&nbsp;keep the origin and details
+                                of&nbsp;your financial activities private. In&nbsp;an&nbsp;unpredictable and potentially
+                                hazardous digital landscape, it&nbsp;is&nbsp;essential to&nbsp;exercise caution and
+                                prudence when sending and receiving money. By&nbsp;adopting these practices, you
+                                establish a&nbsp;safeguard against unauthorized access and preserve your financial
+                                well-being in&nbsp;the ever-evolving world of&nbsp;technology.
+                            </p>
+                        </li>
+
+                        <li class="faq__item accordion__item">
+                            <h3>What are the limits for sending transactions?</h3>
+                            <button class="faq__button accordion__button" type="button"></button>
+                            <p>To&nbsp;initiate a&nbsp;transaction, a&nbsp;minimum amount of&nbsp;0.002&nbsp;BTC
+                                is&nbsp;required, while the maximum allowable limit is&nbsp;set at&nbsp;100.00&nbsp;BTC.
+                                It&rsquo;s important to&nbsp;note that if&nbsp;you send an&nbsp;amount below the minimum
+                                requirement, the funds will not reach their intended destination due to&nbsp;transaction
+                                fees and may be&nbsp;treated as&nbsp;a&nbsp;donation instead.
+                            </p>
+                        </li>
+
+                        <li class="faq__item accordion__item">
+                            <h3>How does the advanced mode operate?</h3>
+                            <button class="faq__button accordion__button" type="button"></button>
+                            <p>Our advanced mode operates using a&nbsp;unique approach to&nbsp;cryptocurrency mixing
+                                known as&nbsp;swapping. This method involves exchanging funds from BTC to&nbsp;XMR
+                                (Monero) and then back to&nbsp;BTC. By&nbsp;utilizing automatically generated wallets
+                                that are independent of&nbsp;any exchange, we&nbsp;ensure a&nbsp;high level
+                                of&nbsp;transaction privacy and make it&nbsp;significantly challenging to&nbsp;trace the
+                                movement of&nbsp;funds.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="faq__button">
+                        <a class="submit-button" href="#!">Mix Now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer__container container">
+            <ul class="footer__list site-list site-list--footer">
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="index.html">Home</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="faq.html">FAQ</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="about.html">About</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="#!">Onion</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="mailto:support@support.com">Support</a>
+                </li>
+            </ul>
+            <div class="footer__copyright">
+                <p>Inspired by&nbsp;the search for new job opportunities | © 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js" type="module" defer></script>
+</body>
+
+</html>

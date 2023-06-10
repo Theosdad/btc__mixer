@@ -3,7 +3,7 @@ const text = 'At Mixer, we prioritize the utmost security, privacy, and anonymit
 
 let i = 0;
 function typeText() {
-    if (i < text.length) {
+    if (i < text.length && textNode) {
         textNode.innerHTML += text.charAt(i);
         i++;
         setTimeout(typeText, 15); 

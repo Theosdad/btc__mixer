@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mixer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/Lato-Bold.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/Lato-Regular.woff2" type="font/woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <nav class="header__nav nav">
+                    <a class="nav__logo logo" href="index.html">
+                        <img src="./img/svg/logo.svg" width="55" height="55" alt="mixer logo">
+                    </a>
+                    <ul class="nav__list site-list">
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="index.html">Home</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="about.html">About</a>
+                        </li>
+                        <li class="site-list__item">
+                            <select id="lang" class="site-list__select select">
+                                <option value="english" selected>EN</option>
+                                <option value="french">FR</option>
+                                <option value="russian">RU</option>
+                                <option value="italian">IT</option>
+                                <option value="spanish">ES</option>
+                                <option value="chinese">CN</option>
+                                <option value="german">DE</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="fees">
+                <div class="fees__container container">
+                    <div class="fees__image">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="img/about__page/fees__image.webp 1x, img/about__page/fees__image@2x.webp 2x">
+                            <img src="img/about__page/fees__image.png" srcset="img/about__page/fees__image@2x.png 2x"
+                                alt="bank sketch." width="275" height="275">
+                        </picture>
+                    </div>
+                    <div class="fees__description">
+                        <h2>Our Services Fees</h2>
+                        <p>
+                            Choosing higher fees provides your transaction with a&nbsp;higher priority level, ensuring
+                            faster processing. Each fee value corresponds to&nbsp;a&nbsp;different protocol that
+                            facilitates quicker transactions.
+                            On&nbsp;average, transactions with higher fees experience a&nbsp;delay of&nbsp;approximately
+                            one hour, while those with lower fees may encounter a&nbsp;delay of&nbsp;around
+                            3&nbsp;hours. However, the exact delay can vary due to&nbsp;blockchain dynamics.
+                        </p>
+                        <p>
+                            To&nbsp;support the continuous improvement of&nbsp;our protocols and the addition
+                            of&nbsp;new features, we&nbsp;charge a&nbsp;fixed fee of&nbsp;0.0003&nbsp;BTC.
+
+                            Please note that the minimum amount to&nbsp;send is&nbsp;0.002&nbsp;BTC, and the maximum
+                            is&nbsp;100.00&nbsp;BTC. Transactions below the minimum threshold will not be&nbsp;processed
+                            and will be&nbsp;treated as&nbsp;a&nbsp;donation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="nologs">
+                <div class="nologs__container container">
+                    <div class="nologs__image">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="img/about__page/nologs__image.webp 1x, img/about__page/nologs__image@2x.webp 2x">
+                            <img src="img/about__page/nologs__image.png"
+                                srcset="img/about__page/nologs__image@2x.png 2x" alt="locker sketch." width="275"
+                                height="275">
+                        </picture>
+                    </div>
+                    <div class="nologs__description">
+                        <h2>No Logs Policy</h2>
+                        <p>
+                            At&nbsp;Mixer, we&nbsp;prioritize the confidentiality of&nbsp;your transactions, and
+                            as&nbsp;part of&nbsp;our commitment to&nbsp;privacy, we&nbsp;do&nbsp;not retain any records
+                            of&nbsp;your requests within our service.
+                        </p>
+                        <p>
+                            Once your session expires, which typically lasts for 24&nbsp;hours, we&nbsp;ensure that
+                            no&nbsp;traces of&nbsp;your visit are stored or&nbsp;kept. Our aim is&nbsp;to&nbsp;provide
+                            a&nbsp;secure and anonymous environment for your transactions.
+                        </p>
+                        <p>
+                            However, please note that we&nbsp;do&nbsp;retain transaction information until
+                            it&nbsp;is&nbsp;completed and confirmed. This allows&nbsp;us to&nbsp;assist you in&nbsp;case
+                            of&nbsp;any troubleshooting or&nbsp;issues that may arise. Rest assured that this
+                            information
+                            is&nbsp;handled with the utmost care and is&nbsp;only used for necessary support purposes.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="guarantee">
+                <div class="guarantee__container container">
+                    <div class="guarantee__image">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="img/about__page/guarantee__image.webp 1x, img/about__page/guarantee__image@2x.webp 2x">
+                            <img src="img/about__page/guarantee__image.png"
+                                srcset="img/about__page/guarantee__image@2x.png 2x" alt="encryption sketch." width="275"
+                                height="275">
+                        </picture>
+                    </div>
+                    <div class="guarantee__description">
+                        <h2>Guarantee</h2>
+                        <p>
+                            While we&nbsp;adhere to&nbsp;our non-logging policy, it&nbsp;is&nbsp;still important
+                            to&nbsp;have proof of&nbsp;your transaction in&nbsp;case of&nbsp;any unforeseen issues
+                            or&nbsp;delays. If&nbsp;your transaction experiences an&nbsp;extended delay,
+                            we&nbsp;encourage
+                            you to&nbsp;contact&nbsp;us immediately without waiting.
+                        </p>
+                        <p>
+                            When you submit your order, you have the option to&nbsp;download a&nbsp;guarantee letter.
+                            This
+                            letter serves as&nbsp;a&nbsp;form of&nbsp;assurance and can be&nbsp;used to&nbsp;expedite
+                            the
+                            resolution of&nbsp;any problems that may arise. In&nbsp;the event of&nbsp;unexpected issues,
+                            please forward the guarantee letter to&nbsp;our support email provided below:
+                        </p>
+                        <p><a href="mailto:support@support.com"><b>support@support.com</b></a></p>
+                        <p>
+                            Our dedicated support team will utilize the transaction details from the guarantee letter
+                            to&nbsp;promptly address and resolve your concerns. We&nbsp;are committed to&nbsp;ensuring
+                            a&nbsp;smooth and secure experience for all our users.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="spoilers">
+                <div class="spoilers__container container">
+                    <ul class="spoilers__list">
+                        <li class="spoilers__item">
+                            <h2>CoinJoin</h2>
+                            <button class="spoilers__button"></button>
+                            <div class="spoilers__content">
+                                <p>
+                                    It&nbsp;is&nbsp;important to&nbsp;be&nbsp;aware that BTC transactions on&nbsp;the
+                                    blockchain are inherently transparent, which can compromise the confidentiality
+                                    of&nbsp;your transactions.
+                                </p>
+                                <p>
+                                    To&nbsp;address this issue, Mixer employs an&nbsp;advanced algorithm known
+                                    as&nbsp;CoinJoin, which operates based on&nbsp;the priority order of&nbsp;your
+                                    transaction fees. When users initiate transactions, Mixer ensures their privacy
+                                    by&nbsp;combining and mixing transactions from multiple users simultaneously.
+                                    To&nbsp;further enhance privacy, Mixer utilizes different wallets as&nbsp;gateways,
+                                    ensuring that previously mixed funds cannot be&nbsp;traced back to&nbsp;individual
+                                    users. While users may have the impression that their transactions are easily
+                                    traceable,
+                                    the origin of&nbsp;the obtained funds remains hidden and confidential.
+                                </p>
+                                <p>
+                                    By&nbsp;implementing this protocol, Mixer ensures that clients no&nbsp;longer need
+                                    to&nbsp;worry about their new transactions getting mixed up&nbsp;with previous ones.
+                                    This approach guarantees the confidentiality of&nbsp;your blockchain transactions,
+                                    providing you with the peace of&nbsp;mind and privacy you seek.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="spoilers__item">
+                            <h2>Advanced Mode</h2>
+                            <button class="spoilers__button"></button>
+                            <div class="spoilers__content">
+                                <p>
+                                    Our advanced mode utilizes a&nbsp;unique mixing method in&nbsp;the realm
+                                    of&nbsp;cryptocurrencies known as&nbsp;&laquo;exchange.&raquo; This method involves
+                                    exchanging funds from BTC to&nbsp;XMR (Monero) and then back to&nbsp;BTC.
+                                    To&nbsp;ensure
+                                    utmost privacy and security, we&nbsp;employ automatically generated wallets that are
+                                    not
+                                    associated with any exchange, making it&nbsp;extremely challenging to&nbsp;trace the
+                                    transactions.
+                                </p>
+                                <p>
+                                    By&nbsp;incorporating the privacy-centric cryptocurrency Monero, our process becomes
+                                    impervious to&nbsp;chain analysis, rendering it&nbsp;impossible to&nbsp;establish
+                                    links
+                                    with Monero addresses. Additionally, the funds are fragmented into random pieces,
+                                    making
+                                    it&nbsp;virtually impossible to&nbsp;correlate the exchanged amount. The end result
+                                    is&nbsp;a&nbsp;transaction that is&nbsp;practically untraceable, passing through
+                                    several
+                                    wallets before reaching the intended destination address.
+                                </p>
+                                <p>
+                                    At&nbsp;Mixer, we&nbsp;take great pride in&nbsp;our advanced mode and highly
+                                    recommend
+                                    its use. We&nbsp;firmly believe that it&nbsp;offers a&nbsp;higher level
+                                    of&nbsp;privacy
+                                    compared to&nbsp;the CoinJoin protocol and encourage users to&nbsp;leverage its
+                                    capabilities. It&nbsp;is&nbsp;important to&nbsp;note that the advanced mode requires
+                                    a&nbsp;fixed fee and a&nbsp;single destination address due to&nbsp;its intricate
+                                    design.
+                                    Rest assured, we&nbsp;are continuously working towards enhancing and refining this
+                                    mode
+                                    for even greater user experience in&nbsp;the future.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="donation">
+                <div class="donation__container container">
+                    <h2>Donation</h2>
+                    <p>If&nbsp;you would like to&nbsp;support the continued development and improvement
+                        of&nbsp;Mixer&rsquo;s Bitcoin mixing services, you have the option to&nbsp;make a&nbsp;donation
+                        to&nbsp;our personal BTC address. Your contribution will help&nbsp;us enhance our technology and
+                        deliver even better privacy and security for our users. We&nbsp;greatly appreciate any donations
+                        made to&nbsp;support our mission.</p>
+                    <div class="donation__input">
+                        <input type="text" value="bTc_hElL_YeAh_aDdrEsS_eXaMple" readonly>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="contacts__container container">
+                    <h2>Contact Us</h2>
+                    <p>If&nbsp;you have any inquiries or&nbsp;run into any issues, please feel free to&nbsp;reach out
+                        to&nbsp;us via e-mail at&nbsp;<a
+                            href="mailto:example@example.com"><b>example@example.com</b></a>. Our dedicated support
+                        team is&nbsp;here
+                        to&nbsp;assist you and ensure that you have a&nbsp;smooth and seamless experience with our
+                        services. Don&rsquo;t hesitate to&nbsp;contact&nbsp;us if&nbsp;you need any assistance
+                        or&nbsp;have any questions. We&rsquo;re here to&nbsp;help!</p>
+                    <div class="contacts__button">
+                        <a class="submit-button" href="#!">Mix Now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer__container container">
+            <ul class="footer__list site-list site-list--footer">
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="index.html">Home</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="faq.html">FAQ</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="about.html">About</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="#!">Onion</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="mailto:support@support.com">Support</a>
+                </li>
+            </ul>
+            <div class="footer__copyright">
+                <p>Inspired by&nbsp;the search for new job opportunities | © 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js" type="module" defer></script>
+</body>
+
+</html>

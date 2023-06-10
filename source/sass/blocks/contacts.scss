@@ -1,0 +1,23 @@
+.contacts {
+    &__container {
+        padding: 35px 15px;
+
+        h2 {
+            margin: 0 0 45px;
+
+            font-size: 32px;
+            line-height: 60px;
+            border-bottom: 2px solid $electric-purple;
+        }
+
+        p {
+            margin: 0 0 50px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    &__button {
+        text-align: center;
+    }
+}

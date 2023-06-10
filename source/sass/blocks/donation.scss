@@ -1,0 +1,42 @@
+.donation {
+    &__container {
+        padding: 65px 15px;
+
+        h2 {
+            margin: 0 0 45px;
+
+            font-size: 32px;
+            line-height: 60px;
+            border-bottom: 2px solid $electric-purple;
+        }
+
+        p {
+            margin: 0 0 55px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    &__input {
+        max-width: 400px;
+        margin: 0 auto;
+
+        input[type=text] {
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+
+            background-color: transparent;
+            color: $white;
+            font-size: 18px;
+            
+            border: 1px solid $orange-peel;
+            border-radius: 5px;
+
+            &:focus,
+            &:active {
+                outline: none;
+            }
+        }
+    }
+}
