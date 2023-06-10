@@ -1,1 +1,2 @@
-/* в этот файл добавляет скрипты*/
+import "./accordion.js";
+import "./appearing-text.js";

@@ -1,0 +1,44 @@
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: .25;
+        transform: translateX(-25px) rotate(45deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0) rotate(45deg);
+    }
+
+    100% {
+        opacity: .25;
+        transform: translateX(25px) rotate(45deg);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

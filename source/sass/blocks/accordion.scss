@@ -1,0 +1,50 @@
+.accordion {
+
+    &__item {
+        p {
+            display: none;
+        }
+
+        button {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            top: 0;
+            left: 0;
+
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 15px;
+                height: 1px;
+                background-color: $white;
+            }
+
+            &::before {
+                transform: rotate(-270deg);
+                transition: all 0.5s ease-out;
+            }
+        }
+    }
+
+    &__item--active {
+        p {
+            display: block;
+        }
+
+        button {
+            &::before {
+                transform: rotate(540deg);
+                transition: all 0.5 ease-out;
+            }
+        }
+
+    }
+}

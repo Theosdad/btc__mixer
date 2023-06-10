@@ -1,0 +1,42 @@
+.faq {
+
+    &__container {
+        padding: 65px 15px;
+        padding-bottom: 135px;
+
+        h2 {
+            text-align: center;
+            font-weight: 700;
+            line-height: 36px;
+            font-size: 40px;
+            margin: 0 0 45px;
+        }
+    }
+
+    &__list {
+        margin: 0 auto;
+        padding: 0;
+        list-style-type: none;
+
+        max-width: 550px;
+    }
+
+    &__item {
+        position: relative;
+        border-bottom: 1px solid $electric-purple;
+
+        h3 {
+            font-size: 26px;
+            line-height: 48px;
+            padding-left: 15px;
+            margin: 0 0 15px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 16px;
+            padding-left: 15px;
+            margin: 0 0 25px;
+        }
+    }
+}

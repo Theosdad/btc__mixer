@@ -2,6 +2,19 @@
 @import "global/variables";
 @import "global/global";
 @import "global/fonts";
+@import "global/animations";
 
 /* BLOCKS */
+
+// index
+@import "blocks/container";
 @import "blocks/header";
+@import "blocks/nav";
+@import "blocks/site-list";
+@import "blocks/hero";
+@import "blocks/submit-button";
+@import "blocks/advantages";
+@import "blocks/about";
+@import "blocks/faq";
+@import "blocks/accordion";
+@import "blocks/footer";
