@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mixer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__nav nav">
+          <a class="nav__logo logo" href="index.html">
+            <img src="./img/svg/logo.svg" width="55" height="55" alt="mixer logo">
+          </a>
+          <ul class="nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Home</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#!">FAQ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#!">About</a>
+            </li>
+            <li class="site-list__item">
+              <select id="lang" class="site-list__select select">
+                <option value="english" selected>EN</option>
+                <option value="french">FR</option>
+                <option value="russian">RU</option>
+                <option value="italian">IT</option>
+                <option value="spanish">ES</option>
+                <option value="chinese">CN</option>
+                <option value="german">DE</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__description">
+            <h1>Mixer</h1>
+            <p id="appearing-text"></p>
+            <a class="hero__button submit-button" href="#!">Mix Now</a>
+          </div>
+          <div class="hero__image">
+            <picture>
+              <source type="image/webp" srcset="img/hero/hero__image.webp 1x, img/hero/hero__image@2x.webp 2x">
+              <img src="img/hero/hero__image.png" srcset="img/hero/hero__image@2x.png 2x" alt="blockchain sketch."
+                width="400" height="315">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__container container">
+          <h2>Our Advantages</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item" tabindex="0">
+              <svg aria-hidden="true" focusable="false" width="30" height="30">
+                <use href="img/icons/stack.svg#icon-ease"></use>
+              </svg>
+              <h3>Simplicity and user-friendly experience</h3>
+              <p>Mixer is&nbsp;designed for effortless usability. With just a&nbsp;few simple steps, you can easily
+                anonymize your bitcoins.</p>
+            </li>
+            <li class="advantages__item" tabindex="0">
+              <svg aria-hidden="true" focusable="false" width="30" height="30">
+                <use href="img/icons/stack.svg#icon-clock"></use>
+              </svg>
+              <h3>Safeguarding your privacy</h3>
+              <p>Ensuring the utmost privacy is&nbsp;our priority, and we&nbsp;adhere to&nbsp;strict practices that
+                include no&nbsp;retention of&nbsp;activity logs.</p>
+            </li>
+            <li class="advantages__item" tabindex="0">
+              <svg aria-hidden="true" focusable="false" width="30" height="30">
+                <use href="img/icons/stack.svg#icon-branches"></use>
+              </svg>
+              <h3>Power of&nbsp;CoinJoin technology</h3>
+              <p>Mixer employs cutting-edge CoinJoin technology to&nbsp;achieve unparalleled mixing outcomes.</p>
+            </li>
+            <li class="advantages__item" tabindex="0">
+              <svg aria-hidden="true" focusable="false" width="30" height="30">
+                <use href="img/icons/stack.svg#icon-card"></use>
+              </svg>
+              <h3>Integration with Tor network</h3>
+              <p>To&nbsp;further enhance your confidentiality, you have the option to&nbsp;access our website through
+                the
+                Tor browser.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container container">
+          <h2>How does it work?</h2>
+          <ul class="about__list">
+            <li class="about__item">
+              <div class="about__image">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/about/about__image-1.webp 1x, img/about/about__image-1@2x.webp 2x">
+                  <img src="img/about/about__image-1.png" srcset="img/about/about__image-1@2x.png 2x"
+                    alt="step 1 sketch." width="200" height="200">
+                </picture>
+              </div>
+              <p>Select your preferred method for sending your components.</p>
+            </li>
+            <li class="about__item">
+              <div class="about__image">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/about/about__image-2.webp 1x, img/about/about__image-2@2x.webp 2x">
+                  <img src="img/about/about__image-2.png" srcset="img/about/about__image-2@2x.png 2x"
+                    alt="step 2 sketch." width="200" height="200">
+                </picture>
+              </div>
+              <p>Download the warranty letter and proceed to&nbsp;send your components.</p>
+            </li>
+            <li class="about__item">
+              <div class="about__image">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/about/about__image-3.webp 1x, img/about/about__image-3@2x.webp 2x">
+                  <img src="img/about/about__image-3.png" srcset="img/about/about__image-3@2x.png 2x"
+                    alt="step 3 sketch." width="200" height="200">
+                </picture>
+              </div>
+              <p>Utilize the transaction link to&nbsp;track the progress of&nbsp;your components&rsquo; arrival.</p>
+            </li>
+            <li class="about__item">
+              <div class="about__image">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/about/about__image-4.webp 1x, img/about/about__image-4@2x.webp 2x">
+                  <img src="img/about/about__image-4.png" srcset="img/about/about__image-4@2x.png 2x"
+                    alt="step 4 sketch." width="200" height="200">
+                </picture>
+              </div>
+              <p>Receive and delight in&nbsp;your newly acquired components.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="faq__container container">
+          <h2>FAQ</h2>
+          <ul class="faq__list accordion">
+            <li class="faq__item accordion__item">
+              <h3>How to use the Mixer service?</h3>
+              <button class="faq__button accordion__button" type="button"></button>
+              <p>Enter Destination BTC Addresses: Provide one or&nbsp;more destination BTC addresses for the
+                transaction.
+                These addresses represent where you want your BTC to&nbsp;be&nbsp;sent after the mixing process.
+                <br>
+                Choose Fees: Select the fees that you would like Mixer to&nbsp;deduct for the service. The available fee
+                options and their functions are explained in&nbsp;detail on&nbsp;our &laquo;About&raquo; page. Make sure
+                to&nbsp;review this information for a&nbsp;better understanding.
+              </p>
+            </li>
+
+            <li class="faq__item accordion__item">
+              <h3>How does Mixer work?</h3>
+              <button class="faq__button accordion__button" type="button"></button>
+              <p>Mixer is&nbsp;a&nbsp;trusted BTC transaction service dedicated to&nbsp;enhancing the security and
+                privacy of&nbsp;your transactions. Our primary goal is&nbsp;to&nbsp;make your transactions highly
+                intricate to&nbsp;track, ultimately strengthening your online identity and security.</p>
+            </li>
+
+            <li class="faq__item accordion__item">
+              <h3>What is&nbsp;Mixer&rsquo;s guarantee?</h3>
+              <button class="faq__button accordion__button" type="button"></button>
+              <p>On&nbsp;the transaction page, you have the option to&nbsp;download your Letter of&nbsp;Guarantee. This
+                document serves as&nbsp;your unique proof of&nbsp;transaction, as&nbsp;it&nbsp;contains a&nbsp;signed
+                record of&nbsp;your transaction details. Should you encounter any issues or&nbsp;have inquiries
+                regarding
+                the status of&nbsp;your transactions, feel free to&nbsp;reach out to&nbsp;our support team
+                at&nbsp;<a href="mailto:example@example.com"><b>example@example.com</b></a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__container container">
+      <ul class="footer__list site-list site-list--footer">
+        <li class="site-list__item site-list__item--footer">
+          <a class="site-list__link" href="index.html">Home</a>
+        </li>
+        <li class="site-list__item site-list__item--footer">
+          <a class="site-list__link" href="#!">FAQ</a>
+        </li>
+        <li class="site-list__item site-list__item--footer">
+          <a class="site-list__link" href="#!">About</a>
+        </li>
+        <li class="site-list__item site-list__item--footer">
+          <a class="site-list__link" href="#!">Onion</a>
+        </li>
+        <li class="site-list__item site-list__item--footer">
+          <a class="site-list__link" href="mailto:support@support.com">Support</a>
+        </li>
+      </ul>
+      <div class="footer__copyright">
+        <p>Inspired by&nbsp;the search for new job opportunities | © 2023</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js" type="module" defer></script>
+</body>
+
+</html>
