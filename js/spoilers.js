@@ -1,0 +1,1 @@
+const spoilerButtons=document.querySelectorAll(".spoilers__button");spoilerButtons.forEach((t=>{t.addEventListener("click",(()=>{t.classList.toggle("active"),t.nextElementSibling.classList.toggle("active")}))}));
