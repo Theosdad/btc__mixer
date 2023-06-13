@@ -1,0 +1,20 @@
+.percentage-input {
+    position: relative;
+    grid-area: percentage-input;
+    margin-bottom: 15px;
+
+    background-color: transparent;
+    color: $white;
+    padding: 12px 6px;
+    border: none;
+
+    font-size: 22px;
+    pointer-events: none;
+
+    -moz-appearance: textfield; 
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}

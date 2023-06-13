@@ -1,0 +1,55 @@
+.slider {
+    h3 {
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0;
+        margin: 0 0 15px;
+    }
+
+    &__input {
+        width: 350px;
+        margin-bottom: 15px;
+    }
+
+    &__wrapper {
+        max-width: 350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__randomizer {
+        color: $orange-peel;
+        background-color: transparent;
+        border: none;
+        
+        cursor: pointer;
+
+        &:focus,
+        &:hover {
+            color: rgba($color: $orange-peel, $alpha: .75);
+            filter: drop-shadow(1px 1px 5px $white);
+        }
+
+        &:active {
+            color: rgba($color: $orange-peel, $alpha: .9);
+            filter: drop-shadow(1px 1px 5px $islamic-green);
+        }
+    }
+
+    &__value {
+        color: $white;
+        background-color: transparent;
+        font-size: 18px;
+        width: 75px;
+        border: none;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    &__note {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+}

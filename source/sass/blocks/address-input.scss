@@ -1,0 +1,18 @@
+.address-input {
+    grid-area: address-input;
+    align-self:baseline;
+    margin-bottom: 15px;
+    margin-right: 10px;
+
+    background-color: transparent;
+    color: $white;
+    padding: 12px 6px;
+    border: 1px solid $orange-peel;
+    border-radius: 3px;
+
+    font-size: 22px;
+
+    &::placeholder {
+        color: $white;
+    }
+}

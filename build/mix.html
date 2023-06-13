@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mixer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/Lato-Bold.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/Lato-Regular.woff2" type="font/woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <nav class="header__nav nav">
+                    <a class="nav__logo logo" href="index.html">
+                        <img src="./img/svg/logo.svg" width="55" height="55" alt="mixer logo">
+                    </a>
+                    <ul class="nav__list site-list">
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="index.html">Home</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="about.html">About</a>
+                        </li>
+                        <li class="site-list__item">
+                            <select id="lang" class="site-list__select select">
+                                <option value="english" selected>EN</option>
+                                <option value="french">FR</option>
+                                <option value="russian">RU</option>
+                                <option value="italian">IT</option>
+                                <option value="spanish">ES</option>
+                                <option value="chinese">CN</option>
+                                <option value="german">DE</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="mixer">
+                <div class="mixer__container container">
+                    <h2>Mixer - your fast and secure transactions.</h2>
+                    <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                        <div class="mixer__form-wrapper">
+                            <div class="mixer__input">
+                                <label class="address-label" for="address-1">Destination BTC Address</label>
+                                <input class="address-input" id="address-1" type="text"
+                                    placeholder="Enter recipient address" required name="address-1">
+                                <label class="percentage-label" for="percentage-1"> Percentage value, %</label>
+                                <input class="percentage-input" id="percentage-1" type="number" value="100.00"
+                                    max="100.00" step="0.01" name="percentage-1" readonly required>
+                            </div>
+                        </div>
+                        <button class="mixer__add-button" id="add__address" type="button">Add another one
+                            address</button>
+                        <div class="mixer__range-slider slider">
+                            <h3>Service Fees</h3>
+                            <input class="slider__input" type="range" id="slider" min="0.700" max="4.700" value="2.500"
+                                step="0.001">
+                            <div class="slider__wrapper">
+                                <input class="slider__value" type="text" id="slider__value" name="fee-value"
+                                    value="2.500 %" readonly required>
+                                <button class="slider__randomizer" id="slider__randomizer" type="button">
+                                    <svg aria-hidden="true" focusable="false" width="26" height="26">
+                                        <use href="img/icons/stack.svg#icon-shuffle"></use>
+                                    </svg>
+                                </button>
+                                <div class="slider__note">Normal</div>
+                            </div>
+                        </div>
+                        <div class="mixer__checkbox">
+                            <label for="agreement">Are you agree to <a href="#!">Terms of Service</a>?</label>
+                            <input id="agreement" name="agreement" type="checkbox" required>
+                        </div>
+                        <input class="mixer__submit-button" type="submit" value="Let's go!">
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer__container container">
+            <ul class="footer__list site-list site-list--footer">
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="index.html">Home</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="faq.html">FAQ</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="about.html">About</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="#!">Onion</a>
+                </li>
+                <li class="site-list__item site-list__item--footer">
+                    <a class="site-list__link" href="mailto:support@support.com">Support</a>
+                </li>
+            </ul>
+            <div class="footer__copyright">
+                <p>Inspired by&nbsp;the search for new job opportunities | © 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/mixer.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.delete-button {
+    grid-area: delete;
+    place-self: center;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    
+    background: url("../../img/svg/icon-delete.svg") center / 65% no-repeat $torch-red;     
+
+    border: none;
+    border-radius: 5px;
+
+    &:focus,
+    &:hover {
+        opacity: 0.75;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
+}

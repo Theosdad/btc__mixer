@@ -12,7 +12,7 @@
 @import "blocks/nav";
 @import "blocks/site-list";
 @import "blocks/hero";
-@import "blocks/submit-button";
+@import "blocks/mix-button";
 @import "blocks/advantages";
 @import "blocks/about";
 @import "blocks/faq";
@@ -26,3 +26,13 @@
 @import "blocks/spoilers";
 @import "blocks/donation";
 @import "blocks/contacts";
+
+//mix
+@import "blocks/mixer";
+@import "blocks/address-label";
+@import "blocks/address-input";
+@import "blocks/percentage-label";
+@import "blocks/percentage-input";
+@import "blocks/edit-button";
+@import "blocks/delete-button";
+@import "blocks/slider.scss";
