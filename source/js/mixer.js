@@ -106,23 +106,28 @@ addButton.addEventListener('click', () => {
     }
 });
 
-slider.addEventListener('change', () => {
-    sliderValue.value = `${slider.value} %`;
-});
-
-sliderValue.addEventListener('change', () => {
-    slider.value = parseFloat(sliderValue.value);
+const setSliderNote = () => {
     const sliderNote = document.querySelector('.slider__note');
-    if (sliderValue.value <= 2) {
+    if (parseFloat(sliderValue.value) <= 2) {
         sliderNote.textContent = 'Slowly';
         sliderNote.style.color = 'red';
-    } else if (sliderValue.value <= 3.9) {
+    } else if (parseFloat(sliderValue.value) <= 3.9) {
         sliderNote.textContent = 'Normal';
         sliderNote.style.color = 'yellow';
     } else {
         sliderNote.textContent = 'Fast';
         sliderNote.style.color = 'green';
     }
+}
+
+slider.addEventListener('change', () => {
+    sliderValue.value = `${slider.value} %`;
+    setSliderNote();
+});
+
+sliderValue.addEventListener('change', () => {
+    slider.value = parseFloat(sliderValue.value);
+    setSliderNote();
 });
 
 const getRandomNumber = () => {
@@ -135,5 +140,6 @@ const getRandomNumber = () => {
 sliderRandomizer.addEventListener('click', () => {
     sliderValue.value = `${getRandomNumber()} %`;
     slider.value = parseInt(sliderValue.value);
+    setSliderNote();
 });
 
