@@ -6,6 +6,10 @@
         align-items: center;
 
         border-bottom: $indigo 2px solid;
+
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &__description {
@@ -13,6 +17,10 @@
 
         display: grid;
         grid-template-rows: 25% 75% 45px;
+
+        @media(max-width: 768px) {
+            margin-bottom: 100px;
+        }
 
         h1 {
             font-weight: 700;
@@ -38,7 +46,7 @@
             &::after {
                 content: "";
                 position: absolute;
-                right: 16px;
+                left: 97%;
                 bottom: 0;
                 display: block;
                 opacity: 0;
@@ -55,11 +63,21 @@
     &__button {
         grid-row: 3 / 4;
         place-self: self-start;
+
+        @media(max-width: 768px) {
+            place-self: center;
+        }
     }
 
     &__image {
+        flex-shrink: 0;
+
         img {
             animation: bounce 2.5s ease-in-out infinite;
+
+            @media(max-width: 768px) {
+                width: 320px;
+            }
         }
     }
 }

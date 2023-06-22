@@ -2,6 +2,10 @@
     &__container {
         padding: 65px 95px;
 
+        @media(max-width: 768px) {
+            padding: 65px 15px;
+        }
+
         border-bottom: $indigo 2px solid;
 
         h2 {
@@ -11,6 +15,10 @@
             font-size: 40px;
 
             margin: 0 0 45px;
+
+            @media(max-width: 768px) {
+                font-size: 28px;
+            }
         }
     }
 
@@ -18,10 +26,15 @@
         padding: 0;
         margin: 0;
         list-style-type: none;
-        
+
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         gap: 35px;
+
+        @media(max-width: 768px) {
+            grid-template-columns: 1fr;
+            padding: 0 25px;
+        }
     }
 
     &__item {
@@ -39,6 +52,7 @@
 
             font-size: 24px;
             font-weight: 700;
+            line-height: 24px;
             letter-spacing: 0;
         }
 

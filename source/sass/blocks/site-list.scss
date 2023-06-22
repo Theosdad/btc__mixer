@@ -24,6 +24,12 @@
     &--footer {
         grid-template-columns: repeat(5, 1fr);
         gap: 25px;
+        margin-right: 30px;
+
+        @media(max-width: 768px) {
+            margin: 0;
+            gap: 10px;
+        }
     }
 
     &__link {
