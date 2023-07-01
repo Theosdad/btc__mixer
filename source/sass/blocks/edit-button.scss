@@ -4,11 +4,16 @@
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
-    
-    background: url("../../img/svg/icon-edit.svg") center / 65% no-repeat $orange-peel;     
+
+    background: url("../../img/svg/icon-edit.svg") center / 65% no-repeat $orange-peel;
 
     border: none;
     border-radius: 5px;
+
+    @media(max-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
 
     &:focus,
     &:hover {

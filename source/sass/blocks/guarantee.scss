@@ -3,11 +3,20 @@
         padding: 65px 35px;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 768px) {
+            padding: 15px 20px;
+        }
     }
 
     &__image {
         flex-shrink: 0;
         align-self: center;
+        margin-right: 20px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
 
         img {
             animation: bounce 2.5s ease-in-out infinite;
@@ -24,12 +33,21 @@
             line-height: 60px;
 
             border-bottom: 2px solid $electric-purple;
+
+            @media (max-width: 768px) {
+                font-size: 28px;
+                margin: 0 0 15px;
+            }
         }
 
         p {
             margin: 0 0 25px;
 
             font-size: 18px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
         }
     }
 }

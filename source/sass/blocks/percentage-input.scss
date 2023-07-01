@@ -11,6 +11,12 @@
     font-size: 22px;
     pointer-events: none;
 
+    @media(max-width: 768px) {
+        font-size: 18px;
+        padding: 5px;
+        margin-bottom: 6px;
+    }
+
     -moz-appearance: textfield; 
 
     &::-webkit-outer-spin-button,

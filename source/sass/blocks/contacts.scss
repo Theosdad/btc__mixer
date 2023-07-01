@@ -8,12 +8,21 @@
             font-size: 32px;
             line-height: 60px;
             border-bottom: 2px solid $electric-purple;
+
+            @media (max-width: 768px) {
+                font-size: 28px;
+                margin: 0 0 15px;
+            }
         }
 
         p {
             margin: 0 0 50px;
             font-size: 18px;
             line-height: 20px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
         }
     }
 
